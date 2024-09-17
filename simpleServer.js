@@ -1,6 +1,21 @@
 const http=require("http")
+const data=[
+    {
+        "id":1,
+        "username":"xyz"
+    },
+    {
+        "id":2,
+        "username":"abc"
+    },
+]
 const server=http.createServer((req,res)=>{
-console.log(req)
-res.end("hello from server")
+console.log("hello")
+// res.setHeader("content-type","text/html")
+// res.end("<h1>Hello from server</h1>")
+// res.setHeader("content-type","application/json")
+// res.end(JSON.stringify(data))
+res.statusCode=404
+res.end("from server")
 })
-server.listen(3001,()=>console.log("server is started"))
+server.listen(3001,()=>console.log("server is started...."))
