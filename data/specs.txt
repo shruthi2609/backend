@@ -1,0 +1,5 @@
+architecture x64
+cpus [object Object],[object Object],[object Object],[object Object]
+free memory available 6456004608
+total memory 12747825152
+machine x86_64
