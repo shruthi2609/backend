@@ -4,7 +4,7 @@ fs.readFile("../data/sample.txt",(err,data)=>{
         console.log(err)
     }
     else{
-        console.log(data.toString())
+        console.log(data)
     }
 })
 // let data="new data"
@@ -14,12 +14,11 @@ fs.readFile("../data/sample.txt",(err,data)=>{
 //     }
 
 // })
-// let data=" updated data"
+// let data="updated data"
 // fs.appendFile("../data/file2.txt",data,(err)=>{
 //     if(err){
 //         console.log("error",err)
 //     }
 
 // })
-
 
