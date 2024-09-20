@@ -4,7 +4,9 @@ fs.readFile("../data/sample.txt",(err,data)=>{
         console.log(err)
     }
     else{
-        console.log(data)
+       fs.writeFile("../data/samplecopy.txt",data,(err)=>{
+        console.log(err)
+       })
     }
 })
 // let data="new data"
