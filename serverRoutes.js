@@ -10,8 +10,8 @@ const server=http.createServer((req,res)=>{
    }
    if(req.url==="/users"&&req.method==="POST"){
    console.log(req)
-   req.on("data",(data)=>{
-    reqdata=data.toString()
+   req.on("data",(chunk)=>{
+    reqdata=chunk.toString()
    })
    req.on("end",()=>{
     /** DB save */

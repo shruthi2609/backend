@@ -1,12 +1,11 @@
 const fs=require("fs")
+const writeStream=fs.createWriteStream("../data/dummysep23")
 fs.readFile("../data/sample.txt",(err,data)=>{
     if(err){
         console.log(err)
     }
     else{
-       fs.writeFile("../data/samplecopy.txt",data,(err)=>{
-        console.log(err)
-       })
+      writeStream.write(data)
     }
 })
 // let data="new data"

@@ -9,11 +9,19 @@ const server=http.createServer((req,res)=>{
 //         res.end(data)
 //     }
 // })
-const readStream=fs.createReadStream("../data/dummy.txt")
+const readStream=fs.createReadStream("../data/sample.txt")
+
+// readStream.on("data",(chunk)=>{
+//     res.write(chunk)
+// })
+// // readStream.pipe(res)
+// readStream.on("end",()=>{
+//     res.end("done")
+// })
+// readStream.on("error",(err)=>{
+//     console.log(err)
+//     res.end("error ")
+// })
 readStream.pipe(res)
-readStream.on("error",(err)=>{
-    console.log("error occured")
-    res.end("error ")
-})
 })
 server.listen(3001,()=>console.log("server started"))

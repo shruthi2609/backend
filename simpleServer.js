@@ -21,5 +21,6 @@ res.writeHead(200,{
     "content-type":"text/html"
 })
 res.end("<h1>hello from server</h1>")
+res.end("end")
 })
 server.listen(3001,()=>console.log("server is started...."))

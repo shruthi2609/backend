@@ -6,4 +6,5 @@ const fs=require("fs")
 // writeStream.write("\n")
 // writeStream.write("this is a new line")
 // writeStream.write("\n")
+
 // writeStream.on("error",(err)=>console.log(err))
